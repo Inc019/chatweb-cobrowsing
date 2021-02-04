@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TestChat</title>
+</head>
+<body>
+	<div>
+		<label>ESCRITORIO</label>
+		<input type="text" id="MEDIADOR_ESCRITORIO" name="MEDIADOR_ESCRITORIO" value="Escritorio"><br><br>
+		<label>USUARIO</label>
+		<input type="text" id="MEDIADOR_USUARIO" name="MEDIADOR_USUARIO" value="Usuario"><br><br>
+		<label>OFICINA</label>
+		<input type="text" id="MEDIADOR_OFICINA" name="MEDIADOR_OFICINA" value="Oficina"><br><br>
+		<label>url navegacion</label>
+		<input type="text" id="URL_ACTUAL" name="URL_ACTUAL" value=""><br><br>
+	</div>
+	<div>
+		<a href="Prueba2.html">Pagina Prueba2</a><br><br>
+	</div>
+
+<!-- ayuda a la venta -->	
+<!-- <script type='text/javascript'>
+  (function() {
+    var proto  = document.location.protocol || 'http:';
+    var node   = document.createElement('script');
+    node.type  = 'text/javascript';
+    node.async = true;
+    node.src   = proto +  '//webchat-cls2-itx-mad.i6.inconcertcc.com/v3/click_to_chat?token=853BB0EE20D1ACC6C199EB59CC6A0188';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(node, s);
+  })();
+</script> -->
+
+<!-- Surfly -->
+<script>
+    (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+    l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+    l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+    (window,document,'script','Surfly');
+
+    Surfly.init({widget_key:'551e5b85c92e451bbe8f94e1e7eb7324', docked_only: false}, function(init) {
+        if (init.success) {
+        // display the default Surfly button
+            Surfly.button();
+        }
+    });
+
+    if(!Surfly.isInsideSession){
+        // Add your chat solution's snippet below
+        // ...
+        // End of chat snippet
+          (function() {
+		    var proto  = document.location.protocol || 'http:';
+		    var node   = document.createElement('script');
+		    node.type  = 'text/javascript';
+		    node.async = true;
+		    node.src   = proto +  '//webchat-cls2-itx-mad.i6.inconcertcc.com/v3/click_to_chat?token=853BB0EE20D1ACC6C199EB59CC6A0188';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(node, s);
+		  })();
+    }
+</script>
+
+<!-- <script type='text/javascript'>
+  (function() {
+    var proto  = document.location.protocol || 'http:';
+    var node   = document.createElement('script');
+    node.type  = 'text/javascript';
+    node.async = true;
+    node.src   = proto +  '//webchat-cls2-itx-mad.i6.inconcertcc.com/v3/click_to_chat?token=014E86A9676A5062A17F4606D0718BF1';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(node, s);
+  })(); 
+</script> -->
+<script type="text/javascript">
+	var URLactual1 = window.location.href;
+	document.getElementById('URL_ACTUAL').value = URLactual1
+</script>
+</body>
+</html>
